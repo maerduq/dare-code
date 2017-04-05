@@ -5,7 +5,7 @@
     (______/|_____)_|_|_| \__)_____)\____)_| |_|
         (C)2017 Semtech
 
-__Da__ta __Re__covery in unconfirmed LoRaWAN frame transmission using forward error correction
+Data Recovery in unconfirmed LoRaWAN frame transmission using forward error correction
 =====================================
 This code is in beta phase and is not properly documented yet!
 
