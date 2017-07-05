@@ -22,11 +22,11 @@ Example projects:
 
 Context
 -------------------
-This project is a result of a Master Thesis at Delft University of Technology. The research has also been published in the 2nd ACM/IEEE International Conference on Internet-of-Things Design and Implementation (IoTDI 2017).
+This project is a result of a Master Thesis at Delft University of Technology. The research has also been published in the 2nd ACM/IEEE International Conference on Internet-of-Things Design and Implementation (IoTDI 2017) and was awarded Best Paper Runner-up.
 
 Documents:
-* [Master Thesis](http://repository.tudelft.nl/islandora/object/uuid%3A78c5e6ea-d34b-498d-b723-9b45d7998480)
-* Paper (t.b.a.)
+* [Master Thesis | Frame Loss Characterisation and Data Erasure Coding for LoRaWAN](http://repository.tudelft.nl/islandora/object/uuid%3A78c5e6ea-d34b-498d-b723-9b45d7998480)
+* [Paper | DaRe: Data Recovery through Application Layer Coding for LoRaWAN](http://dl.acm.org/citation.cfm?id=3054978) (also listed [here](http://www.es.ewi.tudelft.nl/publications.php))
 
 Usage
 ---------
