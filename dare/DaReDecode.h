@@ -15,7 +15,7 @@ By: Paul Marcelis
 #ifndef __DARE_DECODE_H
 #define __DARE_DECODE_H
 
-#define DARE_DECODING_BUFFERS 50
+#define DARE_DECODING_BUFFERS 50 // finite number of buffers to store intermediate data point recovery results
 
 class DaReDecode {
   uint8_t dataPointSize;
@@ -44,7 +44,7 @@ class DaReDecode {
   void storeDataPoint(uint32_t fcntup, uint8_t *dataPoint, uint32_t currentFcntup, int phase);
   void g2rref(bool* matrix, uint32_t width, uint32_t height, uint8_t *X);
   void clearBuffer(uint32_t bufferI);
-  void checkBuffersForSubmatrix(uint32_t newOldestDataPointId, bool giveUpHope, uint32_t fcntup);
+  void checkBuffersForSubmatrix(bool flushBuffers, uint32_t fcntup);
 
 public:
   void init(uint8_t dataPointSizeIn, uint32_t simulationLength);

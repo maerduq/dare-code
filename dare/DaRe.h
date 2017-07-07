@@ -11,40 +11,20 @@ License: Revised BSD License, see LICENSE file included in the project
 By: Paul Marcelis
 */
 
-// Different use cases require different includes. This flag determines the includes
-#define DARE_USE 0 // 0 = default, 1 = mbed, 2 = sodaq, 3 = linux
-
-#if DARE_USE == 0
 #include <iostream>
 #include "utilities.h"
-
-#elif DARE_USE == 1
-#include "mbed.h"
-#include "math.h"
-
-#elif DARE_USE == 2
-#include <stdint.h>
-#include "math.h"
-
-#elif DARE_USE == 3
-#include <iostream>
-#include <stdint.h>
-#include <stdio.h>
-#include <math.h>
-
-#endif
 
 #ifndef __DARE_H
 #define __DARE_H
 
-#define DEBUG 0 // 0 = none, 1 = only result, 2 = process, 3 = all (with matrices)
-#define DARE_MAX_W 64
-//#define CONVENTIONAL_CODING
+#define DEBUG 0 // Amount of debug data to print to std::out. 0 = none, 1 = only result, 2 = process, 3 = all (with matrices)
+#define DARE_MAX_W 64 //absolute maximal supported value for window size W
+//#define CONVENTIONAL_CODING //uncomment to apply a repetition coding scheme instead of DaRe
 
 class DaRe {
 public:
-  enum R_VALUE { R_1_2, R_1_3, R_1_4, R_1_5 }; // Coding rate
-  enum W_VALUE { W_0, W_1, W_2, W_4, W_8, W_16, W_32, W_64 }; // Window size
+  enum R_VALUE { R_1_2, R_1_3, R_1_4, R_1_5 }; // Coding rate enumerate values
+  enum W_VALUE { W_0, W_1, W_2, W_4, W_8, W_16, W_32, W_64 }; // Window size enumerate values
   struct Payload {
     uint8_t *payload;
     uint8_t payloadSize;
