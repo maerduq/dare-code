@@ -12,12 +12,12 @@ This code is in beta phase and is not properly documented yet!
 Introduction
 ----------------
 
-The aim of this project is to show the encoder and decover of DaRe Coding for LoRaWAN.
-To implement DaRe Coding, use one of the example projects.
+The aim of this project is to show the encoder and decoder of DaRe Code for LoRaWAN.
+To implement DaRe Code, use one of the example projects.
 
 Example projects:
 
-1. [DaRe Coding for Sodaq Mbili](https://github.com/maerduq/dare-coding-for-sodaq-mbili)
+1. [DaRe Code for Sodaq Mbili](https://github.com/maerduq/dare-code-for-sodaq-mbili)
 
 
 Context
